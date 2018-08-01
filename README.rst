@@ -1,8 +1,8 @@
 Umschlag: SDK for Python
 ========================
 
-.. image:: http://github.dronehippie.de/api/badges/umschlag/umschlag-python/status.svg
-    :target: http://github.dronehippie.de/umschlag/umschlag-python
+.. image:: http://drone.umschlag.tech/api/badges/umschlag/umschlag-python/status.svg
+    :target: http://drone.umschlag.tech/umschlag/umschlag-python
 
 .. image:: https://badge.waffle.io/umschlag/umschlag-api.svg?label=ready&title=Ready
     :target: http://waffle.io/umschlag/umschlag-api
