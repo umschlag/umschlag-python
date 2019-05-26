@@ -1,7 +1,6 @@
 # coding: utf-8
 
 # flake8: noqa
-
 """
     Umschlag OpenAPI
 
@@ -14,23 +13,7 @@
 
 from __future__ import absolute_import
 
-__version__ = "1.0.0-alpha1"
-
-# import apis into sdk package
-from umschlag.api.auth_api import AuthApi
-from umschlag.api.profile_api import ProfileApi
-from umschlag.api.team_api import TeamApi
-from umschlag.api.user_api import UserApi
-
-# import ApiClient
-from umschlag.api_client import ApiClient
-from umschlag.configuration import Configuration
-from umschlag.exceptions import OpenApiException
-from umschlag.exceptions import ApiTypeError
-from umschlag.exceptions import ApiValueError
-from umschlag.exceptions import ApiKeyError
-from umschlag.exceptions import ApiException
-# import models into sdk package
+# import models into model package
 from umschlag.models.auth_token import AuthToken
 from umschlag.models.auth_verify import AuthVerify
 from umschlag.models.inline_object import InlineObject
@@ -40,4 +23,3 @@ from umschlag.models.team_user import TeamUser
 from umschlag.models.team_user_params import TeamUserParams
 from umschlag.models.user import User
 from umschlag.models.user_team_params import UserTeamParams
-
