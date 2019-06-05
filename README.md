@@ -63,11 +63,11 @@ from umschlag.rest import ApiException
 
 
 api = umschlag.AuthApi(umschlag.ApiClient(configuration))
-auth = umschlag.InlineObject() # InlineObject | 
+params = umschlag.AuthLogin() # AuthLogin | The credentials to authenticate
 
 try:
     # Authenticate an user by credentials
-    resp = api.login_user(auth)
+    resp = api.login_user(params)
     pprint(resp)
 except ApiException as e:
     print("Exception when calling AuthApi->login_user: %s\n" % e)
@@ -107,20 +107,34 @@ Class | Method | HTTP request | Description
 
 ## Documentation for models
 
+ - [AuthLogin](docs/AuthLogin.md)
  - [AuthToken](docs/AuthToken.md)
  - [AuthVerify](docs/AuthVerify.md)
- - [InlineObject](docs/InlineObject.md)
+ - [GeneralError](docs/GeneralError.md)
  - [Profile](docs/Profile.md)
  - [Team](docs/Team.md)
  - [TeamUser](docs/TeamUser.md)
  - [TeamUserParams](docs/TeamUserParams.md)
  - [User](docs/User.md)
  - [UserTeamParams](docs/UserTeamParams.md)
+ - [ValidationError](docs/ValidationError.md)
+ - [ValidationErrorErrors](docs/ValidationErrorErrors.md)
 
 
 ## Documentation For authorization
 
- All endpoints do not require authorization.
+
+## BasicAuth
+
+- **Type**: HTTP basic authentication
+
+
+## HeaderAuth
+
+- **Type**: API key
+- **API key parameter name**: X-API-Key
+- **Location**: HTTP header
+
 
 
 ## Security

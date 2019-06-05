@@ -14,12 +14,15 @@
 from __future__ import absolute_import
 
 # import models into model package
+from umschlag.models.auth_login import AuthLogin
 from umschlag.models.auth_token import AuthToken
 from umschlag.models.auth_verify import AuthVerify
-from umschlag.models.inline_object import InlineObject
+from umschlag.models.general_error import GeneralError
 from umschlag.models.profile import Profile
 from umschlag.models.team import Team
 from umschlag.models.team_user import TeamUser
 from umschlag.models.team_user_params import TeamUserParams
 from umschlag.models.user import User
 from umschlag.models.user_team_params import UserTeamParams
+from umschlag.models.validation_error import ValidationError
+from umschlag.models.validation_error_errors import ValidationErrorErrors
